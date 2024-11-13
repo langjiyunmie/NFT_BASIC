@@ -3,4 +3,13 @@ src = "src"
 out = "out"
 libs = ["lib"]
 
+remmpings = ['@openzeppelin/contracts=lib/openzeppelin-contracts/contracts']
+ffi = true #启用 ffi 允许您在 Solidity 测试中调用外部程序或脚本。
+fs_permissions = [{access = "read", path = "./images/"}] 
+#解释：fs_permissions 是文件系统权限的配置项，用于控制 Solidity 测试中对文件系统的访问权限。
+#[{access = "read", path = "./images/"}]：这是一个列表，包含一个字典。这个字典定义了文件系统的访问权限。
+#access = "read"：表示允许读取权限。
+#path = "./images/"：表示允许读取的路径是 ./images/ 目录。
+
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+  
